@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('photo-1592210454359-9043f067919b.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 410px;
+    height: 485px;
+    background-color: rgb(2, 0, 0, 0.3);
+    text-align: center;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.fatpig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(3px);
+}
+
+.search-box {
+    background-color: white;
+    color: black;
+    /* border-bottom: solid black; */
+    font-size: 18px;
+    border-radius: 16px 16px 16px 16px;
+    width: 350px;
+    height: 40px;
+    padding-left: 12px;
+}
+
+.search-box::placeholder {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
+input {
+    appearance: none;
+    outline: none;
+    background: none;
+    border-style: none;
+}
+
+#searchLocation {
+    margin-left: 5px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    appearance: none;
+    border-style: none;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    font-size: 25px;
+    color: white;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    color: white;
+    font-size: 30px;
+}
+
+.temp {
+    padding-bottom: 2rem;  
+    font-size: 80px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
